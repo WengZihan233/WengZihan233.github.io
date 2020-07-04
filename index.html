@@ -235,6 +235,29 @@ Blog有很多人不知道Blog是什么意思我来解释一下
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'false' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"有機酸-YELLOW（多人合唱×混响）（翻自 神山羊）（Reigo_叉叉 / 困先生 / 阿两 / 俺酱 remix） ","artist":"artist","url":"http://m10.music.126.net/20200705001911/86b2397458c71197d09d20cc55cce833/ymusic/000b/0159/045e/7a045b9249637f39274034cb383dc1a7.mp3","cover":"http://p2.music.126.net/0jRcsXUdjqNbun7RJ9-a3g==/109951164139515832.jpg?param=300x300"},{"name":"チカっとチカ千花っ♡","artist":"artist","url":"http://m10.music.126.net/20200705002052/db6459f8a977b0635b815c027700d5f0/ymusic/5252/0f09/0e5d/e85ec5aff58cdee2eed6979a8a3b8a5f.mp3","cover":"http://p2.music.126.net/_f3z9S9RxnUTfVG0SSQjOg==/109951164023758649.jpg?param=300x300"}]
+    });
+  }
+</script>
+
+  
 
   
 
